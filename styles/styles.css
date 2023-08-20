@@ -537,10 +537,16 @@ h3 {
   .mobile {
     margin-bottom: -48px;
   }
+  .mobile-picture {
+    transform: translateY(-45px);
+  }
   .mobile-description {
     margin-bottom: 68px;
   }
   .demo-description {
     margin-bottom: 68px;
+  }
+  .gradient-text {
+    font-size: 36px;
   }
 }/*# sourceMappingURL=styles.css.map */
