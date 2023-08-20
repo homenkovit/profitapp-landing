@@ -447,6 +447,18 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .banner-rocket-bg {
+    top: 150px;
+    width: 450px;
+  }
+
+  .banner-rocket {
+    top: 100px;
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .banner-content, .about, .mobile, .demo {
     flex-direction: column;
