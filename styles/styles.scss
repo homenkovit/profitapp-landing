@@ -23,7 +23,6 @@ body {
   font-family: "Roboto Light", "Arial", sans-serif;
   font-size: 16px;
   line-height: normal;
-  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -37,6 +36,10 @@ h2 {
 h3 {
   font-size: 24px;
   margin-bottom: 16px;
+}
+
+.root {
+  overflow-x: hidden;
 }
 
 .main {
@@ -522,10 +525,6 @@ h3 {
 
   .mobile-img, .demo-picture-img {
     display: block;
-  }
-
-  .main {
-    overflow-x: clip;
   }
 
   .banner-img {
