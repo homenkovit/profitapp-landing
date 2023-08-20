@@ -428,6 +428,11 @@ h3 {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1153px) {
+  .header {
+    overflow-x: clip;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner-content, .about, .mobile, .demo {
     flex-direction: column;
@@ -444,9 +449,6 @@ h3 {
   .demo-picture,
   .demo-description {
     width: 100%;
-  }
-  .header {
-    overflow-x: clip;
   }
   .banner-img-clouds {
     left: -450px;
