@@ -45,6 +45,7 @@ h3 {
   margin: 0 auto;
   max-width: 1003px;
   margin-bottom: 160px;
+  padding: 0 16px;
 }
 
 .heading-wrapper {
@@ -77,6 +78,7 @@ h3 {
 .header-content {
   max-width: 1003px;
   margin: 0 auto;
+  padding: 0 16px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -138,6 +140,8 @@ h3 {
 }
 
 .profitapp-text-img {
+  position: relative;
+  z-index: 1;
   margin-bottom: 16px;
 }
 
@@ -161,6 +165,7 @@ h3 {
   display: flex;
   max-width: 1003px;
   margin: 0 auto;
+  padding: 0 16px;
   width: 100%;
   z-index: 1;
 }
@@ -186,6 +191,8 @@ h3 {
 }
 
 .banner-description {
+  position: relative;
+  z-index: 1;
   margin-bottom: 88px;
   font-size: 24px;
   color: #7C7BAA;
@@ -243,14 +250,16 @@ h3 {
 }
 
 .about-img {
-  // position: absolute;
   transform: translateY(-65px);
 }
 
-.fake-video {
+.about-video {
   position: absolute;
-  top: 0;
+  top: 55px;
   left: 10%;
+  height: 470px;
+  border-radius: 40px;
+  box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.50);
 }
 
 .mobile {
@@ -260,6 +269,7 @@ h3 {
 
 .mobile-img {
   transform: translate(0px, -45px);
+  width: 100%;
 }
 
 .mobile-description {
@@ -280,7 +290,8 @@ h3 {
 .advantages-list {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 51px;
+  column-gap: 35px;
+  row-gap: 51px;
 }
 
 .demo {
@@ -364,6 +375,8 @@ h3 {
 }
 
 .cta-link {
+  position: relative;
+  z-index: 1;
   padding: 16px 45px;
   border-radius: 50px 20px;
   background-color: #F54F45;
@@ -423,4 +436,137 @@ h3 {
 
 .icon-mail {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-content, .about, .mobile, .demo {
+    flex-direction: column;
+  }
+
+  .about, .mobile {
+    height: auto;
+  }
+
+  .banner-text,
+  .banner-img,
+  .about-picture,
+  .about-description,
+  .mobile-picture,
+  .mobile-description,
+  .demo-picture,
+  .demo-description {
+    width: 100%;
+  }
+
+  .header {
+    overflow-x: clip;
+  }
+
+  .banner-img-clouds {
+    left: -450px;
+  }
+
+  .about-img, .fake-video, .demo-picture-img {
+    width: 100%;
+  }
+
+  .header-content, .main, .banner-content, .footer-content {
+    padding: 0 32px;
+  }
+
+  .banner-rocket-bg {
+    top: -150px;
+    width: 350px;
+  }
+
+  .banner-rocket {
+    top: -150px;
+    width: 350px;
+  }
+
+  .about-video {
+    width: 100%;
+    left: 0;
+    height: 280px;
+  }
+
+  .mobile-picture {
+    order: 2;
+  }
+
+  .mobile-img, .demo-picture-img {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-text,
+  .banner-img,
+  .about-picture,
+  .about-description,
+  .mobile-picture,
+  .mobile-description,
+  .demo-picture,
+  .demo-description {
+    width: 100%;
+  }
+
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .mobile-img, .demo-picture-img {
+    display: block;
+  }
+
+  .main {
+    overflow-x: clip;
+  }
+
+  .banner-img {
+    padding-top: 0;
+  }
+
+  .banner-img-clouds {
+    top: 0;
+    left: -200px;
+    width: 100%;
+  }
+
+  .banner-rocket-bg {
+    right: 0;
+    width: 250px;
+    top: -30px;
+  }
+
+  .banner-rocket {
+    top: -85px;
+    right: 15px;
+    width: 250px;
+  }
+
+  .profitapp-text-img {
+    width: 100%;
+  }
+
+  .about-description {
+    margin-bottom: 68px;
+  }
+
+  .mobile {
+    margin-bottom: -48px;
+  }
+
+  .mobile-description {
+    margin-bottom: 68px;
+  }
+
+  .demo-description {
+    margin-bottom: 68px;
+  }
 }
