@@ -1,0 +1,151 @@
+
+@media screen and (max-width: 1153px) {
+  .header {
+    overflow-x: clip;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .banner-rocket-bg {
+    top: 150px;
+    width: 450px;
+  }
+
+  .banner-rocket {
+    top: 100px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-content, .about, .mobile, .demo {
+    flex-direction: column;
+  }
+
+  .about, .mobile {
+    height: auto;
+  }
+
+  .banner-text,
+  .banner-img,
+  .about-picture,
+  .about-description,
+  .mobile-picture,
+  .mobile-description,
+  .demo-picture,
+  .demo-description {
+    width: 100%;
+  }
+
+  .banner-img-clouds {
+    left: -450px;
+  }
+
+  .about-img, .fake-video, .demo-picture-img {
+    width: 100%;
+  }
+
+  .header-content, .main, .banner-content, .footer-content {
+    padding: 0 32px;
+  }
+
+  .banner-rocket-bg {
+    top: -150px;
+    width: 350px;
+  }
+
+  .banner-rocket {
+    top: -150px;
+    width: 350px;
+  }
+
+  .about-video {
+    width: 100%;
+    left: 0;
+    height: 280px;
+  }
+
+  .mobile-picture {
+    order: 2;
+  }
+
+  .mobile-img, .demo-picture-img {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-text,
+  .banner-img,
+  .about-picture,
+  .about-description,
+  .mobile-picture,
+  .mobile-description,
+  .demo-picture,
+  .demo-description {
+    width: 100%;
+  }
+
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .mobile-img, .demo-picture-img {
+    display: block;
+  }
+
+  .banner-img {
+    padding-top: 0;
+  }
+
+  .banner-img-clouds {
+    top: 0;
+    left: -200px;
+    width: 140%;
+  }
+
+  .banner-rocket-bg {
+    top: 32px;
+    right: 0;
+    width: 250px;
+  }
+
+  .banner-rocket {
+    top: 0;
+    right: 15px;
+    width: 250px;
+  }
+
+  .profitapp-text-img {
+    width: 100%;
+  }
+
+  .about-description {
+    margin-bottom: 68px;
+  }
+
+  .mobile {
+    margin-bottom: -48px;
+  }
+
+  .mobile-picture {
+    transform: translateY(-45px);
+  }
+
+  .mobile-description {
+    margin-bottom: 68px;
+  }
+
+  .demo-description {
+    margin-bottom: 68px;
+  }
+
+  .gradient-text {
+    font-size: 36px;
+  }
+}
