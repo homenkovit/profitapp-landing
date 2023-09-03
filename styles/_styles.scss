@@ -233,7 +233,8 @@ h3 {
 }
 
 .about-img {
-  transform: translateY(-65px);
+  height: auto;
+  transform: translateY(-20px);
 }
 
 .about-video {
@@ -252,6 +253,7 @@ h3 {
 
 .mobile-img {
   width: 100%;
+  height: auto;
 }
 
 .mobile-description {
@@ -361,9 +363,10 @@ h3 {
   z-index: 1;
   padding: 16px 45px;
   border-radius: 50px 20px;
-  background-color: $color-red-1;
+  background-color: $color-red-4;
   color: $color-white;
   text-transform: uppercase;
+  font-family: "Roboto Bold", Arial, sans-serif;
   box-shadow: 20px 20px 40px -10px $color-red-3-rgba;
 }
 

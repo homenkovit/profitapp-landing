@@ -59,15 +59,19 @@
     width: 350px;
   }
 
+  .about {
+    margin-bottom: 79px;
+  }
+
+  .about-description {
+    margin-bottom: 32px;
+  }
+
   .about-video {
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
     height: auto;
-  }
-
-  .about-img {
-    transform: translateY(-35px);
   }
 
   .mobile-picture {
@@ -102,6 +106,7 @@
 
   .mobile-img, .demo-picture-img {
     display: block;
+    height: auto;
   }
 
   .banner-img {
@@ -128,10 +133,7 @@
 
   .profitapp-text-img {
     width: 100%;
-  }
-
-  .about-description {
-    margin-bottom: 68px;
+    height: auto;
   }
   
   .about-img {

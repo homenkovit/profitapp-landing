@@ -235,7 +235,7 @@ h3 {
   font-size: 28px;
 }
 .about-text-item p:last-child {
-  color: #999;
+  color: #777;
   font-size: 18px;
   font-style: italic;
 }
@@ -245,7 +245,8 @@ h3 {
 }
 
 .about-img {
-  transform: translateY(-65px);
+  height: auto;
+  transform: translateY(-20px);
 }
 
 .about-video {
@@ -264,6 +265,7 @@ h3 {
 
 .mobile-img {
   width: 100%;
+  height: auto;
 }
 
 .mobile-description {
@@ -278,7 +280,7 @@ h3 {
 .mobile-description-footnote {
   font-size: 18px;
   font-style: italic;
-  color: #999;
+  color: #777;
 }
 
 .advantages-list {
@@ -367,9 +369,10 @@ h3 {
   z-index: 1;
   padding: 16px 45px;
   border-radius: 50px 20px;
-  background-color: #F54F45;
+  background-color: #e22c21;
   color: #FFF;
   text-transform: uppercase;
+  font-family: "Roboto Bold", Arial, sans-serif;
   box-shadow: 20px 20px 40px -10px rgba(255, 24, 24, 0.6);
 }
 
@@ -476,14 +479,17 @@ h3 {
     top: -150px;
     width: 350px;
   }
+  .about {
+    margin-bottom: 79px;
+  }
+  .about-description {
+    margin-bottom: 32px;
+  }
   .about-video {
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
     height: auto;
-  }
-  .about-img {
-    transform: translateY(-35px);
   }
   .mobile-picture {
     order: 2;
@@ -512,6 +518,7 @@ h3 {
   }
   .mobile-img, .demo-picture-img {
     display: block;
+    height: auto;
   }
   .banner-img {
     padding-top: 0;
@@ -533,9 +540,7 @@ h3 {
   }
   .profitapp-text-img {
     width: 100%;
-  }
-  .about-description {
-    margin-bottom: 68px;
+    height: auto;
   }
   .about-img {
     transform: none;
