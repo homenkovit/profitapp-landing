@@ -115,11 +115,32 @@ h3 {
 .icon-login {
   margin-right: 8px;
   fill: $color-white;
+  flex-shrink: 0;
 }
 
 .login-link {
   color: $color-white;
   font-family: "Roboto Bold", Arial, sans-serif;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 20px);
+    height: 30px;
+    background-color: rgba($color-white, .3);
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
 }
 
 .profitapp-text-img {
@@ -368,6 +389,11 @@ h3 {
   text-transform: uppercase;
   font-family: "Roboto Bold", Arial, sans-serif;
   box-shadow: 20px 20px 40px -10px $color-red-3-rgba;
+  transition: background-color 300ms ease;
+
+  &:hover {
+    background-color: $color-red-5;
+  }
 }
 
 .footer {
