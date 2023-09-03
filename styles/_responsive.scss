@@ -61,8 +61,13 @@
 
   .about-video {
     width: 100%;
-    left: 0;
-    height: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+  }
+
+  .about-img {
+    transform: translateY(-35px);
   }
 
   .mobile-picture {
@@ -127,6 +132,14 @@
 
   .about-description {
     margin-bottom: 68px;
+  }
+  
+  .about-img {
+    transform: none;
+  }
+
+  .about-video {
+    box-shadow: 10px 20px 60px 0px $color-blue-2-rgba;
   }
 
   .mobile {
