@@ -571,6 +571,7 @@ h3 {
   }
   .about-video {
     box-shadow: 10px 20px 60px 0px rgba(24, 48, 63, 0.5);
+    border-radius: 20px;
   }
   .mobile {
     margin-bottom: -48px;
